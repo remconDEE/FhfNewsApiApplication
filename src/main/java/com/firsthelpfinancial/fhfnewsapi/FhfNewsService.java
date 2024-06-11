@@ -7,14 +7,6 @@ import reactor.core.publisher.Mono;
 @Service
 public class FhfNewsService {
 
-//    @Autowired
-//    private final GNewsClient gNewsClient;
-
-//    @Autowired
-//    public FhfNewsService(GNewsClient gNewsClient) {
-//        this.gNewsClient = gNewsClient;
-//    }
-
     @Autowired
     GNewsClient gNewsClient;
 
@@ -29,5 +21,6 @@ public class FhfNewsService {
     public Mono<String> searchTitleDescCont(String q, String in, String apiKey) {
         return gNewsClient.searchTitleDescCont(q, in, apiKey);
     }
+
 }
 
