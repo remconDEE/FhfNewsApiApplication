@@ -10,16 +10,6 @@ public class GNewsClient {
     private static final String BASE_URL = "https://gnews.io/api/v4";
     private final WebClient webClient;
 
-//    private final String apiKey;
-
-//    public GNewsClient(@Value("${gnews.api.url}") String baseUrl,
-//                       @Value("${gnews.api.key}") String apiKey) {
-//        this.webClient = WebClient.builder()
-//                .baseUrl(baseUrl)
-//                .build();
-//        this.apiKey = apiKey;
-//    }
-
     public GNewsClient() {
         this.webClient = WebClient.builder()
                 .baseUrl(BASE_URL)
