@@ -25,4 +25,7 @@ Before you begin, ensure you have met the following requirements:
 - You have installed [Maven](https://maven.apache.org/install.html).
 - You will use [Spring Boot](https://start.spring.io/).
 - You have access to [GNews](https://gnews.io/) where you will generate an API key that you will need to hit the services in this Public News API.
+- You can use [Postman](https://www.postman.com/downloads/) to hit the endpoints of this webservice.
 
+## Running First Help Financing News API
+You can just simply run this application and when it is already running, you can use [Postman](https://www.postman.com/downloads/) and hit the endpoints written above.
