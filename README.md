@@ -1,4 +1,5 @@
 # First Help Financing News API
+By: Marlon Taboso
 
 ## Project Description
 
