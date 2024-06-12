@@ -10,16 +10,16 @@ public class FhfNewsService {
     @Autowired
     GNewsClient gNewsClient;
 
-    public Mono<String> getTopHeadlines(int max, String apiKey) {
-        return gNewsClient.getTopHeadlines(max, apiKey);
+    public Mono<String> getTopHeadlines(int max) {
+        return gNewsClient.getTopHeadlines(max);
     }
 
-    public Mono<String> search(String keyWord, String apiKey) {
-        return gNewsClient.search(keyWord, apiKey);
+    public Mono<String> search(String keyWord) {
+        return gNewsClient.search(keyWord);
     }
 
-    public Mono<String> searchTitleDescCont(String q, String in, String apiKey) {
-        return gNewsClient.searchTitleDescCont(q, in, apiKey);
+    public Mono<String> searchTitleDescCont(String q, String in) {
+        return gNewsClient.searchTitleDescCont(q, in);
     }
 
 }

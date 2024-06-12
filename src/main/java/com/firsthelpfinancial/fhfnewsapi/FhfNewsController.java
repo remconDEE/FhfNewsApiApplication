@@ -15,18 +15,18 @@ public class FhfNewsController {
     FhfNewsService fhfNewsService;
 
     @GetMapping("/top-headlines")
-    public Mono<String> getTopHeadlines(@RequestParam int max, @RequestParam String apiKey) {
-        return fhfNewsService.getTopHeadlines(max, apiKey);
+    public Mono<String> getTopHeadlines(@RequestParam int max) {
+        return fhfNewsService.getTopHeadlines(max);
     }
 
     @GetMapping("/search")
-    public Mono<String> search(@RequestParam String q, @RequestParam String apiKey) {
-        return fhfNewsService.search(q, apiKey);
+    public Mono<String> search(@RequestParam String q) {
+        return fhfNewsService.search(q);
     }
 
     @GetMapping("/search-title-description-content")
-    public Mono<String> searchTitleDescCont(@RequestParam String q, @RequestParam String in, @RequestParam String apiKey) {
-        return fhfNewsService.searchTitleDescCont(q, in, apiKey);
+    public Mono<String> searchTitleDescCont(@RequestParam String q, @RequestParam String in) {
+        return fhfNewsService.searchTitleDescCont(q, in);
     }
 
 }
